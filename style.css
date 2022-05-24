@@ -18,7 +18,7 @@
 
 .centerimg {
     width:30%;
-    
+    background-color: #3f4b5b;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -56,13 +56,14 @@
         width:70%;
         
         display: block;
+        
         margin-left: auto;
         margin-right: auto;
          
     }
     .navbar{
         text-transform: uppercase;
-        font-size: small;
+        font-size: x-small;
         
     }
     .respond{
