@@ -173,35 +173,38 @@
                             </div>
                         </div>
                     </div>
-                    <hr style="color:white; height:10px">
-                    <div class="row">
-                        <div class="col-md-6 mt-3">
-                            <input class="form-control" name="Name" id="name" placeholder="Your name" type="text" required/>
+                    <hr style="color:white; height:10px" >
+                    <form method="POST" action="https://formspree.io/f/mjvppzyb">
+                        <div class="row">
+                            <div class="col-md-6 mt-3">
+                                <input class="form-control" name="Name" id="name" placeholder="Your name" type="text" required/>
+                            </div>
+                            
+                            <div class="col-md-6 mt-3">
+                                <select name='service'class="form-control">
+                                    <option class='text-muted' value="">Sevices I render...</option>
+                                    <option value="frontend">Frontend/UI design and development</option>
+                                    <option value="backend">Server side design and maintainace</option>
+                                    <option value="wordpress">Wordpress development</option>
+                                    <option value="photography">I'm also a photographer. Contact me for more info</option>
+                                </select>
+                            </div>
                         </div>
-                        
-                        <div class="col-md-6 mt-3">
-                            <select name='service'class="form-control">
-                                <option value="">Sevices I render...</option>
-                                <option value="frontend">Frontend/UI design and development</option>
-                                <option value="backend">Server side design and maintainace</option>
-                                <option value="photography">I'm also a photographer. Contact me for more info</option>
-                            </select>
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <label class="form-label text-light">Description, if needed:</label>
+                                <textarea name="Description" id="description"  type="text" style='height:100px;'class="form-control"></textarea>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12">
-                            <label class="form-label text-light">Description, if needed:</label>
-                            <input style='height:100px; padding-top:0px !important;' class="form-control"  name="Description" id="description" type="text" />
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <buttom type="submit " class=" d-block btn btn-info"> Send</buttom>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-12">
-                            <buttom type="submit " class=" d-block btn btn-info"> Send</buttom>
+                        <div>
+                            <p class="text-center text-light mt-4">for more info call me   <i class='fa fa-phone'> +2348105128215</i> or visit <a href='http://www.knkesotericworld.com.ng/services.html'><i class='fa fa-web'>knkesotericworld.com.ng</i></a></p>
                         </div>
-                    </div>
-                    <div>
-                        <p class="text-center text-light mt-4">for more info call me   <i class='fa fa-phone'> +2348105128215</i> or visit <a href='http://www.knkesotericworld.com.ng/services.html'><i class='fa fa-web'>knkesotericworld.com.ng</i></a></p>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
