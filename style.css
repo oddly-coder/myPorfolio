@@ -1,3 +1,27 @@
+.photography-header{
+    background-color:#3f4b5b;
+}
+.headerimage-container{
+    height: fit-content;
+    background-color: #fff;
+    background-size: cover;
+    filter: drop-shadow(10px 10px 15px black);
+    border-radius: 20px;
+    
+}
+.headertext-container{
+    padding-left: 40%;
+    padding-right: 3%;
+    padding-bottom: 50%;
+    text-align: center;
+    position:fixed;
+    
+    top:100px;
+   
+}
+.photoheader-image{
+    width:37%
+}
 .header-background{
     background-color: #3f4b5b  ;
     background-position: cover;
@@ -41,7 +65,7 @@
     opacity: 100%;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:900px){
     .centerimg {
         width:70%;
         
@@ -50,8 +74,16 @@
         margin-right: auto;
          
     }
+    .headertext-container{
+        padding: 5px;
+        margin-top: -10%;
+        margin-left: 45%;
+        width:50%;
+        text-align: center;
+        font-size: small;
+    }
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:600px){
     .centerimg {
         width:70%;
         
@@ -60,14 +92,35 @@
         margin-left: auto;
         margin-right: auto;
          
+    }
+    .photoheader-image{
+        width:50%
     }
     .navbar{
         text-transform: uppercase;
         font-size: x-small;
         
     }
+    .small-icons{
+        font-size: x-small;
+    }
     .respond{
         font-size:medium;
+    }
+    .headerimage-container{
+        height: 155px;
+        
+        background-color: #fff;
+        filter: drop-shadow(10px 10px 15px black);
+        border-radius: 20px;
+    }
+    .headertext-container{
+        padding: 5px;
+        margin-top: -25%;
+        margin-left: 50%;
+        width:50%;
+        text-align: center;
+        font-size:x-small;
     }
 }
 
@@ -85,3 +138,40 @@
 
 }
 
+
+/*gallery slider*/
+
+.slider-body {
+    position: relative;
+    height: 100%;
+}
+
+.slider-body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    width:80%
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background: #000;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent,#0006);
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
