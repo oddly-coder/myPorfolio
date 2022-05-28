@@ -3,10 +3,10 @@
 }
 .headerimage-container{
     height: fit-content;
-    background-color: #fff;
+    
     background-size: cover;
     filter: drop-shadow(10px 10px 15px black);
-    border-radius: 20px;
+    
     
 }
 .headertext-container{
@@ -110,9 +110,9 @@
     .headerimage-container{
         height: 155px;
         
-        background-color: #fff;
+    
         filter: drop-shadow(10px 10px 15px black);
-        border-radius: 20px;
+        
     }
     .headertext-container{
         padding: 5px;
@@ -165,8 +165,8 @@
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 110px;
-    height: 110px;
+    width: 70px;
+    height: 70px;
     background: #000;
     -webkit-box-reflect: below 1px linear-gradient(transparent, transparent,#0006);
 }
