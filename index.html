@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" />
     <link  rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="./style.css">
     <title>A portfolio of Stephen</title>
     <!--<link rel="icon" href="/logo new.png" sizes="32x32" type="image/png">-->
@@ -30,7 +31,7 @@
                                 <a href="#contact" class="nav-link">contact</a>
                             </li>
                             <li class="Nav-item">
-                                <a href="#skill-set" class="nav-link">abilities</a>
+                                <a href="#project" class="nav-link">projects</a>
                             </li>
                             <li class="Nav-item">
                                 <a href="#navigation-cards" class="nav-link">more</a>
@@ -57,9 +58,9 @@
                                 </p>
                                 <div class="row">
                                     <div class="col-12">
-                                        <a href="https://web.facebook.com/steven.ugege/"><i class="fa fa-facebook medium-size"></i></a>
+                                        <a href="https://www.facebook.com/Ejovwojemejobioghene"><i class="fa fa-facebook medium-size"></i></a>
                                         <a href="https:wa.link/o0bme4"><i class="fa fa-whatsapp medium-size ml-2"></i></a>
-                                        <a href="https://www.instagram.com/st_eeeve_/"><i class="fa fa-instagram medium-size ml-2"></i></a>
+                                        <!--<a href="https://www.instagram.com/st_eeeve_/"><i class="fa fa-instagram medium-size ml-2"></i></a>-->
                                         <a href="#contact"><i class="fa fa-envelope medium-size ml-2"></i></a>
                                     </div>
                                 </div>
@@ -120,18 +121,20 @@
                 </div>
             </section>
 
-            <section>
-                <!-- Swiper -->
+            <!--<section>
+                 
                 <div class="container">
                             
-                    <div class="slider-body">
+                    
+                </div>
+                <div class="slider-body">
                        
                         <div class="bg-info text-center text-light mt-5">
 
                             <h3>ONE OF MY PHOTO GALLERY STYLING</h3>
                             
                         </div>
-                        <div class="swiper mySwiper">
+                        <div class=" projects-swiper mySwiper">
                             
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -165,12 +168,12 @@
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                </div>
                 
-                <!-- Swiper JS -->
-            </section>
+                
+            </section>-->
+
             <!--project showcase-->
-            <section>
+            <section id="project">
                 <div class="projects-container">
                     <h3 class="section-title">Some of my WEB Projects</h3>
                     <div class="projects-grid">
@@ -180,9 +183,9 @@
                                 <img src="./images/project/quizzymoney.jpg" alt="http://www.quizzy-money-app.pages.dev">
                             </div>
                             <div class="card-content">
-                                <h2 class="project-title">Paradigm Shift</h2>
+                                <h2 class="project-title">Quizzy Money</h2>
                                 <p class="project-description">
-                                    A fun quizzy game which fetch questions from a public api and rewards users with money for correct answers.
+                                    A fun quizzy game which fetch questions from a public api and rewards users with money for correct answers built with React.
                                 </p>
                                 <div class="project-actions">
                                     <a href="https://quizzy-money-app.pages.dev/" class="btn btn-demo">Live Demo</a>
@@ -197,7 +200,7 @@
                                 <img src="./images/project/hbcresort.jpg" alt="http://www.hbcresort.com">
                             </div>
                             <div class="card-content">
-                                <h2 class="project-title">Massively</h2>
+                                <h2 class="project-title">HBC Resort</h2>
                                 <p class="project-description">
                                     A client website which I did using wordpress and css styling. It is a resort website with booking and payment system integrated.
                                 </p>
@@ -214,9 +217,9 @@
                                 <img src="./images/project/gameofquote.jpg" alt="gameofquote">
                             </div>
                             <div class="card-content">
-                                <h2 class="project-title">Your Project Name</h2>
+                                <h2 class="project-title">Game of Quotes</h2>
                                 <p class="project-description">
-                                    A fun quote guessing game where users guess who said the quote from a list of options. inspired by the famous game "Game of Thrones".
+                                    A fun quote guessing game where users guess who said the quote from a list of options. inspired by the famous game "Game of Thrones" built with React.
                                 </p>
                                 <div class="project-actions">
                                     <a href="https://game-of-quotes.pages.dev/" class="btn btn-demo">Live Demo</a>
@@ -323,7 +326,7 @@
                                 <div class="row form-submit mt-3">
                                     <div class="col-12">
                                         <div class="d-block btn btn-info">
-                                            <button  class=" btn btn-info" type="submit"> Send</button>
+                                            <button  class=" btn btn-info m-auto" type="submit"> Send</button>
                                         </div>
                                         
                                     </div>
@@ -344,34 +347,40 @@
                 <!--Photography web page-->
                
      <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
+     <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var swiper = new Swiper(".project-swiper", {
+            slidesPerView: 1.2,  // ✅ Keeps reflective display
+            spaceBetween: 24,     // ✅ Maintains gallery spacing  
+            loop: true,
+            autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
             },
             pagination: {
             el: ".swiper-pagination",
+            clickable: true,
             },
-            loop:true,
-            autoplay:{
-                delay:1500,
-                disableOnInteraction:true,
+            breakpoints: {
+            768: { 
+                slidesPerView: 2,   // ✅ Responsive gallery structure
+                spaceBetween: 24 
+            },
+            1024: { 
+                slidesPerView: 3,   // ✅ Larger screens show more
+                spaceBetween: 24 
             }
-
+            }
         });
+});
+
     </script>
+        
   
    
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
